@@ -24,7 +24,7 @@ export default function Home() {
           zDraxy
         </h1>
         <p >
-          This is a simple portfolio page built with Next.js and Geist.
+          This is a simple portfolio page built with Next.js and Geist.kbb
         </p> 
         </main>
         </>
