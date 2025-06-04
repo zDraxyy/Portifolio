@@ -1,16 +1,6 @@
 import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export default function Home() {
   return (
@@ -18,12 +8,12 @@ export default function Home() {
       <Head>
     <title>Portifolio</title>
     </Head>
-      <main id="main">
+      <main className={styles.main}>
         <h1>
           zDraxy
         </h1>
         <p>
-            òla, seja bem vindo ao meu portifolio, aqui você vai saber mais sobre mim.
+            Óla, seja bem vindo ao meu portifolio, aqui você vai saber mais sobre mim.
         </p> 
         </main>
         <section>
@@ -37,7 +27,7 @@ export default function Home() {
         <section>
           <a href="projetos/projects.jsx">
           <h2>
-            Projeytos:
+            Projetos:
             </h2>
             <p>
               Meus sites e projetos que estão feitos <br/>

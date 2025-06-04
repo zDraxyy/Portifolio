@@ -1,8 +1,23 @@
-
+@font-face {
+  font-family: "Monocraft";
+  src: url("/fonts/Monocraft.ttc") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: "Monocraft";
+  transform: translateZ(0);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  image-rendering: pixelated;
+  background-color: #383838;
+  color: #ffffff;
 }
 * {
   box-sizing: border-box;
@@ -14,4 +29,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
