@@ -4,6 +4,9 @@ import Head from "next/head";
 export default function Home() {
   return (
         <>
+        <Head>
+          <title>portifolio</title>
+        </Head>
       <main className={styles.main}>
         <h1>
           zDraxy
