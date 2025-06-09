@@ -65,11 +65,12 @@ export default function Home() {
           <h2>
             Redes Sociais:
           </h2>
-         <a href="https://discord.com/channels/@me"> <BsDiscord size={50} /> </a>
-          <BsTwitterX size={45} />
-          <FaTwitch size={50} />
-          <BsYoutube size={50} />
-          <IoLogoGithub size={50} />
+         <a href="https://discord.com/users/1174471132221538304" target="_blank">
+          <BsDiscord size={50} /> </a>
+         <a><BsTwitterX size={45} /></a>
+         <a> <FaTwitch size={50} /></a>
+          <a><BsYoutube size={50} /></a>
+          <a href="https://github.com/zDraxyy" target="_blank"><IoLogoGithub size={50} /></a>
         </footer>
         </>
 
