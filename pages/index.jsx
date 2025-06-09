@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
+import { BsDiscord } from "react-icons/bs";
+import { BsTwitterX } from "react-icons/bs";
+import { FaTwitch } from "react-icons/fa";
+import { BsYoutube } from "react-icons/bs";
+import { IoLogoGithub } from "react-icons/io";
 
 export default function Home() {
   return (
@@ -56,10 +61,15 @@ export default function Home() {
             Email: draxypersonalcontact@gmail.com
           </p>
         </div>
-        <footer>
+        <footer className={styles.footer}>
           <h2>
             Redes Sociais:
           </h2>
+         <a href="https://discord.com/channels/@me"> <BsDiscord size={50} /> </a>
+          <BsTwitterX size={45} />
+          <FaTwitch size={50} />
+          <BsYoutube size={50} />
+          <IoLogoGithub size={50} />
         </footer>
         </>
 
