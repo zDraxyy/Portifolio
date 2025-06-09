@@ -6,7 +6,10 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaTwitch } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import { IoLogoGithub } from "react-icons/io";
-
+import{
+  SiJavascript,SiCss3,SiHtml5,SiReact,SiNextdotjs,
+  SiTailwindcss,SiTypescript,SiMongodb,SiSupabase,SiNodeDotJs,TbBrandCpp
+}
 export default function Home() {
   return (
         <>
@@ -51,6 +54,10 @@ export default function Home() {
         <div>
           <h2>
             Tecnologias:
+            <div className={styles.technologies}>
+
+            </div>
+
           </h2>
         </div>
         <div>
