@@ -6,10 +6,6 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaTwitch } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import { IoLogoGithub } from "react-icons/io";
-import{
-  SiJavascript,SiCss3,SiHtml5,SiReact,SiNextdotjs,
-  SiTailwindcss,SiTypescript,SiMongodb,SiSupabase,SiNodeDotJs,TbBrandCpp
-}
 export default function Home() {
   return (
         <>
@@ -17,7 +13,7 @@ export default function Home() {
     <title>Portifolio</title>
     </Head>
       <main className={styles.main}>
-        <h1>
+        <h1 className={styles.title}>
           zDraxy
         </h1>
         <p>
@@ -25,10 +21,10 @@ export default function Home() {
         </p> 
         </main>
         <section>
-         <h2> Sobre mim:</h2>
+         <h2 className={styles.aboutme}> Sobre mim:</h2>
          <p>
-          Tenho 16 anos, sou um desenvolvedor full stack,<br/>
-          procuro sempre aprender mais ainda sobre programação.<br/>
+          Tenho 16 anos, sou um desenvolvedor full stack.<br/>
+          Procuro sempre aprender mais ainda sobre programação.<br/>
           Faço alguns hobbys como fazer addons e videos no youtube.
          </p>
         </section>
@@ -55,14 +51,12 @@ export default function Home() {
           <h2>
             Tecnologias:
             <div className={styles.technologies}>
-
             </div>
-
           </h2>
         </div>
         <div>
           <h2>
-            Contatos
+            Contato:
           </h2>
           <p>
             Email: draxypersonalcontact@gmail.com
@@ -76,10 +70,9 @@ export default function Home() {
           <BsDiscord size={50} /> </a>
          <a><BsTwitterX size={45} /></a>
          <a> <FaTwitch size={50} /></a>
-          <a><BsYoutube size={50} /></a>
+          <a href="https://www.youtube.com/channel/UCNL-FiewpHfFXUMiMe70HjQ" target="_blank"><BsYoutube size={50} /></a>
           <a href="https://github.com/zDraxyy" target="_blank"><IoLogoGithub size={50} /></a>
         </footer>
         </>
-
   );
 }

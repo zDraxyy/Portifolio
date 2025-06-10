@@ -1,3 +1,27 @@
 .main{
 text-align: center;
+margin-top: 10px;
+font-size: 26px;
+}
+.title{
+font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(270deg, #ffd878, #f8b256, #e9ab5b,#ffd878);
+  background-size: 200% 100%;
+  background-repeat: repeat-x;
+  background-position: 0% 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 200% 50%;
+  }
 }
