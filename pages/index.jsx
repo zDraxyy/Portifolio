@@ -6,6 +6,11 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaTwitch } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import { IoLogoGithub } from "react-icons/io";
+import { 
+  SiTypescript, SiNextdotjs, SiNodedotjs, SiReact,
+  SiJavascript, SiGit, SiGithub, SiTailwindcss, 
+  SiHtml5, SiCss3 
+} from "react-icons/si";
 export default function Home() {
   return (
         <>
@@ -20,15 +25,15 @@ export default function Home() {
             Óla, seja bem vindo ao meu portifolio, aqui você vai saber mais sobre mim.
         </p> 
         </main>
-        <section>
-         <h2 className={styles.aboutme}> Sobre mim:</h2>
+        <section className={styles.aboutme}>
+         <h2 className={styles.me} > Sobre mim:</h2>
          <p>
-          Tenho 16 anos, sou um desenvolvedor full stack.<br/>
-          Procuro sempre aprender mais ainda sobre programação.<br/>
-          Faço alguns hobbys como fazer addons e videos no youtube.
+          Tenho 16 anos, sou um desenvolvedor full stack,<br/>
+          procuro sempre aprender mais ainda sobre programação.<br/>
+          Faço alguns hobbys como fazer addons e videos.
          </p>
         </section>
-        <section>
+        <section className={styles.projects}>
           <a href="projetos/projects.jsx">
           <h2>
             Projetos:
@@ -39,7 +44,7 @@ export default function Home() {
             </p>
             </a>
         </section>
-        <section>
+        <section className={styles.addons}>
           <h2>
             Addons/Mods:
           </h2>
@@ -47,14 +52,24 @@ export default function Home() {
             Addons e Mods para Minecraft
           </p>
         </section>
-        <div>
+        <div className={styles.technologiesSection}>
           <h2>
             Tecnologias:
             <div className={styles.technologies}>
+              <SiTypescript size={30} />
+              <SiNextdotjs size={30} />
+              <SiNodedotjs size={30} />
+              <SiReact size={30} />
+              <SiJavascript size={30} />
+              <SiGit size={30} />
+              <SiGithub size={30} />
+              <SiTailwindcss size={30} />
+              <SiHtml5 size={30} />
+              <SiCss3 size={30} />
             </div>
           </h2>
         </div>
-        <div>
+        <div className={styles.contactSection}>
           <h2>
             Contato:
           </h2>

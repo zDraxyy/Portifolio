@@ -19,9 +19,41 @@ font-weight: bold;
 
 @keyframes gradientMove {
   from {
-    background-position: 0% 50%;
-  }
-  to {
     background-position: 200% 50%;
   }
+  to {
+    background-position: 0% 50%;
+  }
+}
+.aboutme{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 14px;
+  padding: 15px;
+  max-width: 20%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.aboutme:hover {
+  animation: borderDegrade 2s linear infinite;
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(120deg, #ffd878, #f8b256, #e9ab5b, #ffd878) 1;
+  border-radius: 14px;
+}
+
+@keyframes borderDegrade {
+  0% {
+    border-image-source: linear-gradient(120deg, #ffd878, #f8b256, #e9ab5b, #ffd878);
+  }
+  100% {
+    border-image-source: linear-gradient(480deg, #ffd878, #f8b256, #e9ab5b, #ffd878);
+
+  }
+}
+.me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
