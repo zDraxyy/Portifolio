@@ -33,27 +33,45 @@ font-weight: bold;
   border-radius: 14px;
   padding: 15px;
   max-width: 20%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1),
+  box-shadow 0.3s cubic-bezier(.4,2,.6,1);
+  border-image-source: 0.5s linear;
+  overflow: hidden;
 }
 .aboutme:hover {
+  transform: scale(1.03) translateY(-4px);
   animation: borderDegrade 2s linear infinite;
   border-width: 4px;
   border-style: solid;
   border-image: linear-gradient(120deg, #ffd878, #f8b256, #e9ab5b, #ffd878) 1;
   border-radius: 14px;
+  overflow: hidden;
 }
 
 @keyframes borderDegrade {
   0% {
     border-image-source: linear-gradient(120deg, #ffd878, #f8b256, #e9ab5b, #ffd878);
   }
-  100% {
+  50% {
     border-image-source: linear-gradient(480deg, #ffd878, #f8b256, #e9ab5b, #ffd878);
-
+  }
+        100% {
+    border-image-source: linear-gradient(120deg, #ffd878, #f8b256, #e9ab5b, #ffd878);  
   }
 }
 .me{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 600px) {
+  .aboutme {
+    max-width: 95vw;
+    min-width: unset;
+    padding: 12px;
+    font-size: 1rem;
+  }
+  .main {
+    font-size: 1.2rem;
+  }
 }
