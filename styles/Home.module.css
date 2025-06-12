@@ -58,12 +58,6 @@ font-weight: bold;
         100% {
     border-image-source: linear-gradient(120deg, #ffd878, #f8b256, #e9ab5b, #ffd878);  
   }
-  from {
-    background-position: 200% 50%;
-  }
-  to {
-    background-position: 0% 50%;
-  }
 }
 .me{
   display: flex;
