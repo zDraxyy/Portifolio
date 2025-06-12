@@ -22,7 +22,7 @@ export default function Home() {
           zDraxy
         </h1>
         <p>
-            Óla, seja bem vindo ao meu portifolio, aqui você vai saber mais sobre mim.
+            Óla, seja bem vindo ao meu portifolio. Aqui você vai saber mais sobre mim.
         </p> 
         </main>
         <section className={styles.aboutme}>
@@ -35,7 +35,7 @@ export default function Home() {
         </section>
         <section className={styles.projects}>
           <a href="projetos/projects.jsx">
-          <h2>
+          <h2 className={styles.pro}>
             Projetos:
             </h2>
             <p>
@@ -45,7 +45,7 @@ export default function Home() {
             </a>
         </section>
         <section className={styles.addons}>
-          <h2>
+          <h2 className={styles.add}>
             Addons/Mods:
           </h2>
           <p>
