@@ -25,6 +25,7 @@ export default function Home() {
             Óla, seja bem vindo ao meu portifolio. Aqui você vai saber mais sobre mim.
         </p> 
         </main>
+        <div className={styles.Container}>
         <section className={styles.aboutme}>
          <h2 className={styles.me} > Sobre mim:</h2>
          <p>
@@ -52,6 +53,7 @@ export default function Home() {
             Addons e Mods para Minecraft
           </p>
         </section>
+        </div>
         <div className={styles.technologiesSection}>
           <h2>
             Tecnologias:
@@ -74,7 +76,7 @@ export default function Home() {
             Contato:
           </h2>
           <p>
-            Email: draxypersonalcontact@gmail.com
+            Email: <a href="mailto:draxycommercialcontact@gmail.com">draxycommercialcontact@gmail.com</a>
           </p>
         </div>
         <footer className={styles.footer}>
