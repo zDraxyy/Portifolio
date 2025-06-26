@@ -1,10 +1,13 @@
-.main{
-text-align: center;
-margin-top: 10px;
-font-size: 26px;
+.main {
+   text-align: center;
+  margin-top: 10px;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 26px;
 }
-.title{
-font-weight: bold;
+.title {
+  font-weight: bold;
   display: inline-block;
   background: linear-gradient(270deg, #ffd878, #f8b256, #e9ab5b,#ffd878);
   background-size: 200% 100%;
@@ -16,7 +19,6 @@ font-weight: bold;
   color: transparent;
   animation: gradientMove 3s linear infinite;
 }
-
 @keyframes gradientMove {
   from {
     background-position: 200% 50%;
@@ -39,7 +41,32 @@ font-weight: bold;
   background: transparent;
   z-index: 1;
 }
-
+.aboutmeText {
+  background: linear-gradient(270deg, #ffd878, #f8b256, #e9ab5b, #ffd878);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: Gradient 3s linear infinite;
+  font-weight: bold;
+}
+@keyframes aboutmeGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes aboutmeTextGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 .aboutme::before {
   content: '';
   position: absolute;
@@ -53,12 +80,10 @@ font-weight: bold;
   z-index: -1;
   opacity: 0;
 }
-
 .aboutme:hover {
   transform: scale(1.03) translateY(-4px);
   border-color: transparent;
 }
-
 .aboutme:hover::before {
   opacity: 1;
   animation: borderDegrade 2.5s linear infinite;
@@ -69,7 +94,6 @@ font-weight: bold;
   mask-composite: exclude;
   padding: 3px; 
 }
-
 @keyframes borderDegrade {
   0% {
     background-position: 0% 50%;
@@ -82,7 +106,7 @@ font-weight: bold;
   }
 }
 .projects{
-display: flex;
+  display: flex;
   flex-direction: column;
   margin: 20px;
   border: 2px solid #bbbbbb;
@@ -96,7 +120,7 @@ display: flex;
   z-index: 1;
 }
 .projects::before {
-content: '';
+  content: '';
   position: absolute;
   top: -4px;
   left: -4px;
@@ -122,30 +146,18 @@ content: '';
   mask-composite: exclude;
   padding: 3px; 
 }
-@keyframes borderDegrade {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .pro{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .me{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .addons{
- display: flex;
+  display: flex;
   flex-direction: column;
   margin: 20px;
   border: 2px solid #bbbbbb;
@@ -185,22 +197,11 @@ content: '';
   mask-composite: exclude;
   padding: 3px; 
 }
-@keyframes borderDegrade {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-  .add{
-      display: flex;
+.add{
+  display: flex;
   justify-content: center;
   align-items: center;
-  }
+}
 @media (max-width: 600px) {
   .aboutme {
     max-width: 95vw;
@@ -212,23 +213,61 @@ content: '';
     font-size: 1.2rem;
   }
 }
-
 .technologiesSection {
- 
   text-align: center;
   justify-content: center;
-justify-items: center;
+  justify-items: center;
 }
 .technologies {
-
-  align-items: center;
   align-items: center;
   justify-content: center;
-justify-items: center;
+  justify-items: center;
   margin-bottom: 20px;
 }
-.Container{
+.Container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 32px;
+  max-width: 900px;
+  margin: 40px auto;
+  justify-items: center;
+  align-items: stretch;
+  width: 100%;
+}
+.aboutme {
+  grid-column: 1;
+  grid-row: 1;
+}
+.projects {
+  grid-column: 2;
+  grid-row: 1;
+}
+.addons {
+  grid-column: 1;
+  grid-row: 2;
+}
+.technologiesSection {
+  grid-column: 2;
+  grid-row: 2;
+  width: 100%;
+  max-width: 340px;
+  min-width: 220px;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .Container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 16px;
+  }
+  .aboutme,
+  .projects,
+  .addons,
+  .technologiesSection {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    max-width: 95vw;
+    width: 100%;
+  }
 }

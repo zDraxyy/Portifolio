@@ -28,7 +28,7 @@ export default function Home() {
         <div className={styles.Container}>
         <section className={styles.aboutme}>
          <h2 className={styles.me} > Sobre mim:</h2>
-         <p>
+         <p >
           Tenho 16 anos, sou um desenvolvedor full stack,<br/>
           procuro sempre aprender mais ainda sobre programação.<br/>
           Faço alguns hobbys como fazer addons e videos.
